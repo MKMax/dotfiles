@@ -25,22 +25,11 @@
 # The top properties below are applied to every block, but can be overridden.
 # Each block command defaults to the script name to avoid boilerplate.
 command=~/.local/share/i3blocks/$BLOCK_NAME
-separator_block_width=24
+separator_block_width=8
 markup=none
-
-# Volume indicator
-#
-# The first parameter sets the step (and units to display)
-# The second parameter overrides the mixer selection
-# See the script for details.
-[volume]
-label=🔈
-instance=Master
-interval=once
-signal=10
 
 # date & time
 [time]
 label=🕗
-command=date +"%d/%m/%Y %H:%M"
-interval=60
+command=date +"%a. %b %d, %Y [%d/%m/%g] %k:%M:%S"
+interval=1

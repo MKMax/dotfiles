@@ -11,7 +11,7 @@
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
-font pango:Monospaced 12
+font pango:Meslo LG S, Regular 12px
 
 # Set the desired mod key
 set $mod Mod4
@@ -255,6 +255,7 @@ hide_edge_borders none
 bar {
 	status_command i3blocks
 	position top
+	tray_output none
 	colors {
 		background $normal_b
 		separator $normal_c
@@ -279,7 +280,8 @@ assign [class="Firefox"] workspace $ws1
 assign [class="Gnome-terminal"] workspace $ws2
 
 # Start our configured graphical applications
-exec firefox https://www.youtube.com/
+exec firefox
+exec gnome-terminal; gnome-terminal
 
 # Picom as the X11 compositor
 exec_always picom                  \
