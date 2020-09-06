@@ -1,3 +1,8 @@
+" plugin configuration and the sort
+filetype on
+filetype plugin on
+
+
 " default line numbering settings that should suite
 " most operatings in vim
 set number
@@ -9,7 +14,9 @@ set relativenumber
 " make much sense most of the time.
 set autoindent
 set tabstop=4
+set softtabstop=4
 set shiftwidth=4
+set noexpandtab
 
 " a cosmetic option that will allow us to see a few
 " lines ahead of where we school for convenience.
@@ -33,6 +40,10 @@ noremap <Right>   <Nop>
 " keys at the top, I want my keybinds to still
 " be usable. Therefore, the F1-F12 keys will be
 " remapped to <Leader>q through <Leader>]
+"
+" I expect letters Q-R to be my general purpose
+" binds, with the rest of the T-] keys being
+" unallocated.
 "
 " Start by mapping the search highlight toggle:
 nnoremap <Leader>q :set hls!<CR>
