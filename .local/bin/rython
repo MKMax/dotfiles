@@ -1,0 +1,14 @@
+#!/usr/bin/sh
+
+# This is a simple alias script that runs the
+# `python` command with a prefixed
+# `env PYTHONPATH=.` making python also include
+# the current directory as a module search path.
+#
+# This is mostly for personal script files and
+# research projects to aid organization.
+# 
+# All of the arguments passed to this script
+# are forwarded to `python`
+
+env PYTHONPATH=. python "$@"
