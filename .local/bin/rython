@@ -1,4 +1,4 @@
-#!/usr/bin/sh
+#!/bin/sh
 
 # This is a simple alias script that runs the
 # `python` command with a prefixed
